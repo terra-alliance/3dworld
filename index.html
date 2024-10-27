@@ -1,53 +1,70 @@
 <!DOCTYPE html>
 <html>
+
 <head><!--__________________________________________________________________________________________Head-->
 
-<title>3dworld</title>
+	<title>3dworld</title>
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-<style>
-	body { margin: 0; }
-	#grass { z-index: -2; position: absolute }
-	#models { z-index: -1; position: absolute }
-	#menu { z-index: 0; position: absolute; pointer-events: none }
-</style>
+	<style>
+		body {
+			margin: 0;
+		}
+
+		#grass {
+			z-index: -2;
+			position: absolute
+		}
+
+		#models {
+			z-index: -1;
+			position: absolute
+		}
+
+		#menu {
+			z-index: 0;
+			position: absolute;
+			pointer-events: none
+		}
+	</style>
 
 </head><!--_________________________________________________________________________________________/Head-->
 
 <body><!--__________________________________________________________________________________________Body-->
 
-<canvas id="grass"></canvas>
-<div id="canvas_container">
-	<canvas id="models"></canvas>
-</div>
-<canvas id="menu"></canvas>
+	<canvas id="grass"></canvas>
+	<div id="canvas_container">
+		<canvas id="models"></canvas>
+	</div>
+	<canvas id="menu"></canvas>
 
-<script src="https://threejs.org/build/three.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
-<script src="https://rawcdn.githack.com/mrdoob/three.js/r147/examples/js/controls/OrbitControls.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.6/dat.gui.min.js"></script>
-<script src="./three.interaction.js"></script>
-<script src="https://rawcdn.githack.com/mrdoob/three.js/r147/examples/js/geometries/TextGeometry.js"></script>
-<script src="https://rawcdn.githack.com/mrdoob/three.js/r147/examples/js/loaders/FontLoader.js"></script>
-<script src="https://rawcdn.githack.com/mrdoob/three.js/r147/examples/js/controls/PointerLockControls.js"></script>
-<script src="https://rawcdn.githack.com/mrdoob/three.js/r147/examples/js/controls/TransformControls.js"></script>
-<script src="https://rawcdn.githack.com/mrdoob/three.js/r147/examples/js/objects/Sky.js"></script>
-<script src="https://rawcdn.githack.com/mrdoob/three.js/r147/examples/js/renderers/CSS3DRenderer.js"></script>
-<script src="https://rawcdn.githack.com/mrdoob/three.js/r147/examples/js/loaders/FBXLoader.js"></script>
-<script src="https://rawcdn.githack.com/mrdoob/three.js/r147/examples/js/libs/fflate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+	<script src="https://rawcdn.githack.com/mrdoob/three.js/r147/examples/js/controls/OrbitControls.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.6/dat.gui.min.js"></script>
+	<script src="./three.interaction.js"></script>
+	<script src="https://rawcdn.githack.com/mrdoob/three.js/r147/examples/js/geometries/TextGeometry.js"></script>
+	<script src="https://rawcdn.githack.com/mrdoob/three.js/r147/examples/js/loaders/FontLoader.js"></script>
+	<script src="https://rawcdn.githack.com/mrdoob/three.js/r147/examples/js/controls/PointerLockControls.js"></script>
+	<script src="https://rawcdn.githack.com/mrdoob/three.js/r147/examples/js/controls/TransformControls.js"></script>
+	<script src="https://rawcdn.githack.com/mrdoob/three.js/r147/examples/js/objects/Sky.js"></script>
+	<script src="https://rawcdn.githack.com/mrdoob/three.js/r147/examples/js/renderers/CSS3DRenderer.js"></script>
+	<script src="https://rawcdn.githack.com/mrdoob/three.js/r147/examples/js/loaders/FBXLoader.js"></script>
+	<script src="https://rawcdn.githack.com/mrdoob/three.js/r147/examples/js/libs/fflate.min.js"></script>
 
-<script src="./0-creators.js"></script>
-<script src="./1-scene.js"></script>
-<script src="./2-controls.js"></script>
-<script src="./3-menu.js"></script>
-<script src="./4-sky.js"></script>
-<script src="./5-grass.js"></script>
-<script src="./6-models.js"></script>
-<script src="./7-animate.js"></script>
-<script src="./8-window.js"></script>
+	<script src="./0-creators.js"></script>
+	<script src="./1-scene.js"></script>
+	<script src="./2-controls.js"></script>
+	<script src="./3-menu.js"></script>
+	<script src="./4-sky.js"></script>
+	<script src="./5-grass.js"></script>
+	<script src="./6-models.js"></script>
+	<script src="./7-animate.js"></script>
+	<script src="./8-window.js"></script>
 
 </body><!--_________________________________________________________________________________________/Body-->
+
 </html>
