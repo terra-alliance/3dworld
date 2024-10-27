@@ -1,1 +1,1 @@
-https://santista1.github.io/3dworld/
+https://terra-alliance.github.io/3dworld/
